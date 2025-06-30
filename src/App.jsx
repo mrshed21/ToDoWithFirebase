@@ -213,8 +213,10 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center py-10 px-4">
-      <div className="flex justify-between items-center w-xl p-4 bg-gray-100">
+    <div className="w-full max-w-2xl mx-auto   bg-gray-100 flex flex-col items-center py-10 px-4">
+
+      <div className="w-full max-w-xl bg-white shadow-lg rounded-xl p-6">
+      <div className="flex w-full justify-between items-center  p-4 bg-gray-100">
         <span className="text-sm text-gray-600 block">
           👋 مرحبًا،{" "}
           <span className="font-medium text-blue-600">{user?.email}</span>
@@ -226,8 +228,6 @@ function App() {
           تسجيل الخروج
         </button>
       </div>
-
-      <div className="w-full max-w-xl bg-white shadow-lg rounded-xl p-6">
         <div style={{ padding: "20px" }}>
           <h1 className="text-2xl font-bold text-blue-600 mb-6 text-center">
             📋 قائمة المهام
