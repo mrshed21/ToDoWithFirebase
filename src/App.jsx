@@ -162,7 +162,7 @@ function App() {
         )}
       </span>
 
-      <div className="flex justify-end gap-2 mt-1">
+      <div className="flex justify-end gap-2 mt-3">
         <button
           onClick={() => toggleTaskDone(task.id, task.done)}
           className={`px-3 py-1 rounded-md text-sm ${
@@ -233,7 +233,7 @@ function App() {
           <h1 className="text-2xl font-bold text-blue-600 mb-6 text-center">
             📋 قائمة المهام
           </h1>
-          <div className="flex gap-2 mb-6">
+          <div className="flex text-sm gap-2 mb-6 w-full">
             <input
               type="text"
               value={newTask}
