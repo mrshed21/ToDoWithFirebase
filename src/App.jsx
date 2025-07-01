@@ -139,20 +139,21 @@ function App() {
   const renderTask = (task) => (
     <li
       key={task.id}
-      className="flex justify-between items-center border-b py-3"
+      className="flex-c justify-between items-center border-b py-3"
     >
       <span
         className={`flex-1 ${task.done ? "line-through text-gray-400" : ""}`}
       >
         {editingId === task.id ? (
-          <input
+         
+         <input
             value={editingText}
             onChange={(e) => setEditingText(e.target.value)}
             className="flex-1 px-2 py-1 border rounded"
           />
         ) : (
           <span
-            className={`flex-1 ${
+            className={` text-2xl  ${
               task.done ? "line-through text-gray-400" : ""
             }`}
           >
@@ -161,7 +162,7 @@ function App() {
         )}
       </span>
 
-      <div className="flex gap-2">
+      <div className="flex justify-end gap-2 mt-1">
         <button
           onClick={() => toggleTaskDone(task.id, task.done)}
           className={`px-3 py-1 rounded-md text-sm ${
